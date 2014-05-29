@@ -20,11 +20,10 @@ const int ddLogLevel = LOG_LEVEL_DEBUG;
 +(void)setUp
 {
     // 使用 asl+tty 或者 file+tty
-    id<DDLogFormatter> logFormatter = [[PGLogFormatter alloc] init];
     id<DDLogger> ttyLogger = [DDTTYLogger sharedInstance];
     id<DDLogger> fileLogger = [[DDFileLogger alloc] init];
-    [ttyLogger setLogFormatter:logFormatter];
-    [fileLogger setLogFormatter:logFormatter];
+    [ttyLogger setLogFormatter:[[PGLogFormatter alloc] init]];
+    [fileLogger setLogFormatter:[[PGLogFormatter alloc] init]];
     [DDLog addLogger:ttyLogger]; // tty
     [DDLog addLogger:fileLogger]; // file
     //[DDLog addLogger:[DDASLLogger sharedInstance]]; // apple system logger

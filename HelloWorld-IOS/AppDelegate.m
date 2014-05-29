@@ -21,7 +21,7 @@
     
     [PGLog setUp];
     
-    PGLogDebug(@"init DDLog");
+    PGLogDebug(@"init Log");
     return YES;
 }
 
