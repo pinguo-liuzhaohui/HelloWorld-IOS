@@ -8,7 +8,6 @@
 
 #import "AppDelegate.h"
 #import "PGLog.h"
-static const int ddLogLevel = LOG_LEVEL_DEBUG;
 
 @implementation AppDelegate
 
@@ -19,7 +18,7 @@ static const int ddLogLevel = LOG_LEVEL_DEBUG;
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     
-    [PGLog setUp];
+    [PGLog setUp:LOG_LEVEL_DEBUG];
     
     PGLogDebug(@"init Log");
     return YES;

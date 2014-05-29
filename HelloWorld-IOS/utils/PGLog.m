@@ -13,11 +13,11 @@
 #import "PGLogFormatter.h"
 #import "DDFileLogger.h"
 
-//const int ddLogLevel = LOG_LEVEL_DEBUG;
+int ddLogLevel = LOG_LEVEL_WARN;
 
 @implementation PGLog
 
-+(void)setUp
++(void)setUp:(int)logLevel
 {
     // 使用 asl+tty 或者 file+tty
     id<DDLogger> ttyLogger = [DDTTYLogger sharedInstance];
@@ -27,9 +27,10 @@
     [DDLog addLogger:ttyLogger]; // tty
     [DDLog addLogger:fileLogger]; // file
     //[DDLog addLogger:[DDASLLogger sharedInstance]]; // apple system logger
+    ddLogLevel = logLevel;
     
     NSString *logDir = [[(DDFileLogger*)fileLogger logFileManager] logsDirectory];
     
-    NSLog(@"init log dir: %@", [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
+    PGLogInfo(@"init log dir: %@", [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
 }
 @end
