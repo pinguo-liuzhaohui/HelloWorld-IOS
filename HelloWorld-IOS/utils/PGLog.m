@@ -13,7 +13,7 @@
 #import "PGLogFormatter.h"
 #import "DDFileLogger.h"
 
-const int ddLogLevel = LOG_LEVEL_DEBUG;
+//const int ddLogLevel = LOG_LEVEL_DEBUG;
 
 @implementation PGLog
 
@@ -30,6 +30,6 @@ const int ddLogLevel = LOG_LEVEL_DEBUG;
     
     NSString *logDir = [[(DDFileLogger*)fileLogger logFileManager] logsDirectory];
     
-    PGLogInfo(@"init log dir: %@", [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
+    NSLog(@"init log dir: %@", [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
 }
 @end

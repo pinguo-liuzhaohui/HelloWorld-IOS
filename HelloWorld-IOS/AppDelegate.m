@@ -8,7 +8,7 @@
 
 #import "AppDelegate.h"
 #import "PGLog.h"
-
+static const int ddLogLevel = LOG_LEVEL_DEBUG;
 
 @implementation AppDelegate
 
