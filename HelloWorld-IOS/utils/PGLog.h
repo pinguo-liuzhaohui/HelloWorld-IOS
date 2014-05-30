@@ -9,7 +9,7 @@
 #import <Foundation/Foundation.h>
 #import "DDLog.h"
 
-// 这里定义了一个全局变量ddLogLevel，
+// 这里定义了一个全局变量ddLogLevel，使用简单
 // 也可以在每个需要打印的文件里使用 static const int ddLogLevel; 定义局部变量分别控制
 extern int ddLogLevel;
 #define PGLogError(frmt, ...)   LOG_C_MAYBE(LOG_ASYNC_ERROR,   LOG_LEVEL_DEF, LOG_FLAG_ERROR,   0, frmt, ##__VA_ARGS__)
