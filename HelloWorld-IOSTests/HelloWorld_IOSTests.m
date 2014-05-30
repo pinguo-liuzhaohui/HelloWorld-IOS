@@ -41,6 +41,8 @@
         //NSData* stubData = [@"Hello World!" dataUsingEncoding:NSUTF8StringEncoding];
         //return [OHHTTPStubsResponse responseWithData:stubData statusCode:200 headers:nil];
     }];
+    
+    // 下面这两行代码是可选的
     stub.name = @"success stub";
     [OHHTTPStubs onStubActivation:^(NSURLRequest *request, id<OHHTTPStubsDescriptor> stub) {
         NSLog(@"[OHHTTPStubs] Request to %@ has been stubbed with %@", request.URL, stub.name);
@@ -70,6 +72,8 @@
                                                                       userInfo:nil]]
             requestTime:0.1 responseTime:0.1];
     }];
+    
+    // 下面这两行代码是可选的
     stub.name = @"failed stub";
     [OHHTTPStubs onStubActivation:^(NSURLRequest *request, id<OHHTTPStubsDescriptor> stub) {
         NSLog(@"[OHHTTPStubs] Request to %@ has been stubbed with %@", request.URL, stub.name);
