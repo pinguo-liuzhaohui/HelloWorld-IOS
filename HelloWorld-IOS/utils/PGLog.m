@@ -31,6 +31,6 @@ int ddLogLevel = LOG_LEVEL_WARN;
     
     NSString *logDir = [[(DDFileLogger*)fileLogger logFileManager] logsDirectory];
     
-    PGLogInfo(@"init log dir: %@", [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
+    PGLogInfo(@"init loglevel: %d, log dir: %@", ddLogLevel, [[logDir mutableCopy] stringByReplacingOccurrencesOfString:@" " withString:@"\\ "]);
 }
 @end

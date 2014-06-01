@@ -26,6 +26,7 @@
 		D3B1FE3119349D3F00B79342 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D3B1FE2F19349D3F00B79342 /* InfoPlist.strings */; };
 		D3B1FE3319349D3F00B79342 /* HelloWorld_IOSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B1FE3219349D3F00B79342 /* HelloWorld_IOSTests.m */; };
 		D3B1FE3E1934BA1B00B79342 /* test.json in Resources */ = {isa = PBXBuildFile; fileRef = D3B1FE3D1934BA1A00B79342 /* test.json */; };
+		D3B8A5AA19388BC00080B903 /* AFNetworkingUsageTestCase.m in Sources */ = {isa = PBXBuildFile; fileRef = D3B8A5A919388BC00080B903 /* AFNetworkingUsageTestCase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,7 @@
 		D3B1FE3019349D3F00B79342 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D3B1FE3219349D3F00B79342 /* HelloWorld_IOSTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorld_IOSTests.m; sourceTree = "<group>"; };
 		D3B1FE3D1934BA1A00B79342 /* test.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = test.json; sourceTree = "<group>"; };
+		D3B8A5A919388BC00080B903 /* AFNetworkingUsageTestCase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkingUsageTestCase.m; sourceTree = "<group>"; };
 		D6251178663242C18C689A01 /* Pods-HelloWorld-IOS.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HelloWorld-IOS.xcconfig"; path = "Pods/Pods-HelloWorld-IOS.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -166,6 +168,7 @@
 				D3B1FE3C1934B9FA00B79342 /* data */,
 				D3B1FE3219349D3F00B79342 /* HelloWorld_IOSTests.m */,
 				D3B1FE2D19349D3F00B79342 /* Supporting Files */,
+				D3B8A5A919388BC00080B903 /* AFNetworkingUsageTestCase.m */,
 			);
 			path = "HelloWorld-IOSTests";
 			sourceTree = "<group>";
@@ -363,6 +366,7 @@
 			files = (
 				D34966B219373D6500C77E72 /* PGLogFormatter.m in Sources */,
 				D3B1FE3319349D3F00B79342 /* HelloWorld_IOSTests.m in Sources */,
+				D3B8A5AA19388BC00080B903 /* AFNetworkingUsageTestCase.m in Sources */,
 				D34966AE19373D3300C77E72 /* PGLog.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
